@@ -1,0 +1,13 @@
+version: "3"
+services:
+  keycloakssl:
+    image: quay.io/keycloak/keycloak:10.0.2
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASS: admin
+    ports:
+      - "443:8443"
+    # uncomment this section with you generate your own certificate
+    #volumes:
+    #- cert.pem:/etc/x509/https/tls.crt
+    #- cert.key:/etc/x509/https/tls.key
