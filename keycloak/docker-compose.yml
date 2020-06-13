@@ -3,7 +3,7 @@ services:
   keycloak_nossl:
     image: quay.io/keycloak/keycloak:10.0.2
     environment:
-      KEYCLOAK_USER: admin
-      KEYCLOAK_PASS: admin
+      KEYCLOAK_USER: 'admin'
+      KEYCLOAK_PASSWORD: 'admin'
     ports:
       - "8080:8080"

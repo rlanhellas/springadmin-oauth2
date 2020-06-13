@@ -3,8 +3,8 @@ services:
   keycloakssl:
     image: quay.io/keycloak/keycloak:10.0.2
     environment:
-      KEYCLOAK_USER: admin
-      KEYCLOAK_PASS: admin
+      KEYCLOAK_USER: 'admin'
+      KEYCLOAK_PASSWORD: 'admin'
     ports:
       - "443:8443"
     # uncomment this section with you generate your own certificate
